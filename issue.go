@@ -109,8 +109,8 @@ type IssueFields struct {
 	Priority                      *Priority         `json:"priority,omitempty" structs:"priority,omitempty"`
 	Resolutiondate                Time              `json:"resolutiondate,omitempty" structs:"resolutiondate,omitempty"`
 	Created                       Time              `json:"created,omitempty" structs:"created,omitempty"`
-	StartDate                     Date              `json:"customfield_11803,omitempty" structs:"customfield_11803,omitempty"`
-	Duedate                       Date              `json:"duedate,omitempty" structs:"duedate,omitempty"`
+	StartDate                     string            `json:"customfield_11803,omitempty" structs:"customfield_11803,omitempty"`
+	Duedate                       string            `json:"duedate,omitempty" structs:"duedate,omitempty"`
 	Watches                       *Watches          `json:"watches,omitempty" structs:"watches,omitempty"`
 	Assignee                      *User             `json:"assignee,omitempty" structs:"assignee,omitempty"`
 	Updated                       Time              `json:"updated,omitempty" structs:"updated,omitempty"`
