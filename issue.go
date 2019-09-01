@@ -135,6 +135,7 @@ type IssueFields struct {
 	Attachments                   []*Attachment     `json:"attachment,omitempty" structs:"attachment,omitempty"`
 	Epic                          *Epic             `json:"epic,omitempty" structs:"epic,omitempty"`
 	EpicLink                      string            `json:"customfield_10018,omitempty" structs:"customfield_10018,omitempty"`
+	EpicName                      string            `json:"customfield_10020,omitempty" structs:"customfield_10020,omitempty"`
 	Sprint                        *Sprint           `json:"sprint,omitempty" structs:"sprint,omitempty"`
 	Parent                        *Parent           `json:"parent,omitempty" structs:"parent,omitempty"`
 	AggregateTimeOriginalEstimate int               `json:"aggregatetimeoriginalestimate,omitempty" structs:"aggregatetimeoriginalestimate,omitempty"`
