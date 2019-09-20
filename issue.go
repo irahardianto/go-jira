@@ -109,7 +109,10 @@ type IssueFields struct {
 	Priority                      *Priority         `json:"priority,omitempty" structs:"priority,omitempty"`
 	Resolutiondate                Time              `json:"resolutiondate,omitempty" structs:"resolutiondate,omitempty"`
 	Created                       Time              `json:"created,omitempty" structs:"created,omitempty"`
-	StartDate                     string            `json:"customfield_11803,omitempty" structs:"customfield_11803,omitempty"`
+	C_DueDate                     string            `json:"customfield_11800,omitempty" structs:"customfield_11800,omitempty"`
+	C_StartDate                   string            `json:"customfield_11803,omitempty" structs:"customfield_11803,omitempty"`
+	C_BeginDate                   string            `json:"customfield_11807,omitempty" structs:"customfield_11807,omitempty"`
+	C_EndDate                     string            `json:"customfield_11808,omitempty" structs:"customfield_11808,omitempty"`
 	Duedate                       string            `json:"duedate,omitempty" structs:"duedate,omitempty"`
 	Watches                       *Watches          `json:"watches,omitempty" structs:"watches,omitempty"`
 	Assignee                      *User             `json:"assignee,omitempty" structs:"assignee,omitempty"`
@@ -135,8 +138,8 @@ type IssueFields struct {
 	Subtasks                      []*Subtasks       `json:"subtasks,omitempty" structs:"subtasks,omitempty"`
 	Attachments                   []*Attachment     `json:"attachment,omitempty" structs:"attachment,omitempty"`
 	Epic                          *Epic             `json:"epic,omitempty" structs:"epic,omitempty"`
-	EpicLink                      string            `json:"customfield_10018,omitempty" structs:"customfield_10018,omitempty"`
-	EpicName                      string            `json:"customfield_10020,omitempty" structs:"customfield_10020,omitempty"`
+	C_EpicLink                    string            `json:"customfield_10018,omitempty" structs:"customfield_10018,omitempty"`
+	C_EpicName                    string            `json:"customfield_10020,omitempty" structs:"customfield_10020,omitempty"`
 	Sprint                        *Sprint           `json:"sprint,omitempty" structs:"sprint,omitempty"`
 	Parent                        *Parent           `json:"parent,omitempty" structs:"parent,omitempty"`
 	AggregateTimeOriginalEstimate int               `json:"aggregatetimeoriginalestimate,omitempty" structs:"aggregatetimeoriginalestimate,omitempty"`
